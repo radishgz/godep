@@ -16,8 +16,8 @@ RUN go get github.com/spf13/pflag
 RUN go get golang.org/x/net/context
 RUN  mkdir -p $GOPATH/src/golang.org/x
 RUN cd $GOPATH/src/golang.org/x
-RUN git https://github.com/golang/tools.git
-#RUN go get golang.org/x/text/secure/bidirule
+RUN git clone https://github.com/golang/tools
+RUN go get golang.org/x/text/secure/bidirule
 #RUN go get golang.org/x/tools
 RUN go get go.uber.org/zap
 RUN go get gopkg.in/inf.v0
