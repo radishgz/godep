@@ -1,4 +1,4 @@
-FROM golang:1.8.3
+FROM golang
 RUN go get github.com/tools/godep
 RUN go get github.com/gregjones/httpcache
 RUN go get github.com/davecgh/go-spew/spew
